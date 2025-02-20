@@ -12,3 +12,10 @@ This question interests me because I like movies and I’ve wondered if movie th
 
 # Experiment Population
 All movies released in 2018 and 2022.
+
+# Sample Space
+- Highest profit movies (proCt includes international box office and home-release sales)
+- Top 35 highest profit movies from 2018 Top 35 highest profit movies from 2022
+
+# Variable
+Average movie profit for 2018 and 2022.
