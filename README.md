@@ -19,3 +19,13 @@ All movies released in 2018 and 2022.
 
 # Variable
 Average movie profit for 2018 and 2022.
+
+# Data Collection Plan
+I am only considering the total profit a movie makes in its theatrical run & home-release, not its exact total grossing sales. It is important to consider the amount of money it takes to produce each movie, since growing budgets is a factor in the “blockbuster-fatigue” conversation. So, I will be using this equation to calculate the profit per movie: Average Profit = Total Gross - Budget x 2. All total grossing sales are officially recorded online, which I will record using an Excel spreadsheet and record my sources. I am only considering the top 35 highest proCting movies from 2018 and 2022 because if I were to randomly choose 35 movies from each year, major bias will be introduced because of factors like season release (non-summer or non-festival), studio production (independent?), set-aside marketing budget, and audience variety (ex. indie horror Vs. Marvel). I will also make a note in my project of the number of movies each year that had a budget of over $100 Million, since the highest grossing most likely have medium to large budgets.
+
+# Method
+I conducted my research by using boxofficemojo to find the box office reports for each movie and the-numbers to find the budget reports for each movie. These were the best websites I could find that provided the information I needed. I had to manually search for each of the 70 movies twice, so 140 Excel values were manually entered, where the number ranged from a few million to a billion. Once these values were recorded, I had to create a custom formula to create the two new proCt columns. Since the proCt values were in the millions, it would have taken hours for me to enter them all into my graphing calculator, so I first copied the profit columns into the Notepad app to arrange them into a list than used a website (https://www.statology.org/two-sample-t-test-calculator/) to perform t-test for me.
+
+# Data Collection
+Box office reports: https://www.boxofficemojo.com/year/world/2018/ (IMDbPro Verified) Production budget reports: https://www.the-numbers.com/movie/budgets (Studios Directly
+Partnered)
