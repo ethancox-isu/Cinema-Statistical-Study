@@ -41,3 +41,40 @@ data_2022 = {
 df22 = pd.DataFrame(data_2022)
 print("First 10 rows of the 2022 DataFrame:")
 print(df22.head(10))
+
+
+# Movie data for 2018
+titles_2018 = [
+    "Avengers: Infinity War", "Black Panther", "Jurassic World: Fallen Kingdom", "
+    "Bohemian Rhapsody", "Venom", "Mission Impossible - Fallout", "Deadpool 2", "F
+    "Ant-Man and The Wasp", "Ready Player One", "Operation Red Sea", "Detective Ch
+    "The Meg", "Hotel Transylvania 3: Summer Vacation", "The Grinch", "Bumblebee",
+    "A Star is Born", "Rampage", "Mamma Mia! Here We Go Again", "Solo: A Star Wars
+    "Fifty Shades Freed", "Hello Mr. Billionaire", "The Nun", "Monster Hunt 2", "P
+    "Mary Poppins Returns", "A Quiet Place", "Green Book", "Skyscraper", "Ocean's
+]
+revenues_2018 = [
+    2048359754, 1346913161, 1308467944, 1242805359, 1151961807, 903655259, 8560851
+    734546611, 655755901, 622674139, 583490172, 579330426, 544185156, 529323962, 5
+    528583774, 511595957, 467989645, 451176639, 436388866, 428128233, 395044706, 3
+    375582637, 371985018, 366961907, 366050119, 361682618, 351266433, 349537494, 3
+    321752656, 304868961, 297718711
+]
+budgets_2018 = [
+    300000000, 200000000, 170000000, 200000000, 160000000, 55000000, 116000000, 17
+    110000000, 200000000, 130000000, 150000000, 70000000, 63000000, 175000000, 178
+    65000000, 75000000, 102000000, 10900000, 36000000, 120000000, 75000000, 275000
+    90000000, 55000000, 48000000, 22000000, 143000000, 50000000, 130000000, 170000
+    23000000, 125000000, 70000000
+]
+
+# Create a dictionary with the data
+data_2018 = {
+    'Title': titles_2018,
+    'Revenue': revenues_2018,
+    'Budget': budgets_2018
+}
+# Create the 2018 DataFrame
+df18 = pd.DataFrame(data_2018)
+print("\nFirst 10 rows of the 2018 DataFrame:")
+print(df18.head(10))
