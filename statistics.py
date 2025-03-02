@@ -89,3 +89,12 @@ print(df22.head(10))
 # Profits = (budgets * 2) - revenue
 df18['Profit'] = df18['Revenue'] - (df18['Budget'] * 2)
 print(df18.head(10))
+
+# Calculate summary statistics for 2022
+mean_profit_2022 = df22['Profit'].mean()
+median_profit_2022 = df22['Profit'].median()
+std_dev_profit_2022 = df22['Profit'].std()
+# Calculate summary statistics for 2018
+mean_profit_2018 = df18['Profit'].mean()
+median_profit_2018 = df18['Profit'].median()
+std_dev_profit_2018 = df18['Profit'].std()
