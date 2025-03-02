@@ -98,3 +98,14 @@ std_dev_profit_2022 = df22['Profit'].std()
 mean_profit_2018 = df18['Profit'].mean()
 median_profit_2018 = df18['Profit'].median()
 std_dev_profit_2018 = df18['Profit'].std()
+
+# Display the results
+print("2022 Profit Statistics:")
+print(f"Mean: {mean_profit_2022}")
+print(f"Median: {median_profit_2022}")
+print(f"Standard Deviation: {std_dev_profit_2022}")
+
+print("\n2018 Profit Statistics:")
+print(f"Mean: {mean_profit_2018}")
+print(f"Median: {median_profit_2018}")
+print(f"Standard Deviation: {std_dev_profit_2018}")
