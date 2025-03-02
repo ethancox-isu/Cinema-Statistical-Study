@@ -78,3 +78,14 @@ data_2018 = {
 df18 = pd.DataFrame(data_2018)
 print("\nFirst 10 rows of the 2018 DataFrame:")
 print(df18.head(10))
+
+
+
+# Profit Calculation
+
+# Profits = revenue - (budgets * 2)
+df22['Profit'] = df22['Revenue'] - (df22['Budget'] * 2)
+print(df22.head(10))
+# Profits = (budgets * 2) - revenue
+df18['Profit'] = df18['Revenue'] - (df18['Budget'] * 2)
+print(df18.head(10))
