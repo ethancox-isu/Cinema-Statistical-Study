@@ -109,3 +109,33 @@ print("\n2018 Profit Statistics:")
 print(f"Mean: {mean_profit_2018}")
 print(f"Median: {median_profit_2018}")
 print(f"Standard Deviation: {std_dev_profit_2018}")
+
+
+
+# Displaying the results
+
+# 1. Histogram of Profit Distributions
+# Setting a style
+sns.set(style="whitegrid")
+# Figure setup for side-by-side histograms
+plt.figure(figsize=(14, 6))
+# Histogram for 2022 with KDE, mean, and median
+plt.subplot(1, 2, 1)
+sns.histplot(df22['Profit'], bins=5, kde=True, color='royalblue', alpha=0.7)
+plt.axvline(df22['Profit'].mean(), color='red', linestyle='--', label='Mean')
+plt.axvline(df22['Profit'].median(), color='purple', linestyle='-.', label='Median
+plt.title('Profit Distribution for 2022', fontsize=14)
+plt.xlabel('Profit (in billions)')
+plt.ylabel('Frequency')
+plt.legend()
+# Histogram for 2018 with KDE, mean, and median
+plt.subplot(1, 2, 2)
+sns.histplot(df18['Profit'], bins=5, kde=True, color='forestgreen', alpha=0.7)
+plt.axvline(df18['Profit'].mean(), color='red', linestyle='--', label='Mean')
+plt.axvline(df18['Profit'].median(), color='purple', linestyle='-.', label='Median
+plt.title('Profit Distribution for 2018', fontsize=14)
+plt.xlabel('Profit (in billions)')
+plt.ylabel('Frequency')
+plt.legend()
+plt.tight_layout()
+plt.show()
