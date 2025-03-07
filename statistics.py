@@ -139,3 +139,26 @@ plt.ylabel('Frequency')
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+
+
+# 2. Scatter plot of revenue vs. budget
+# Scatter plot for 2022
+sns.scatterplot(
+    x=df22['Budget'], y=df22['Revenue'], size=df22['Profit'], sizes=(20, 200),
+    color='royalblue', alpha=0.7, legend=False
+)
+# Scatter plot for 2018
+sns.scatterplot(
+    x=df18['Budget'], y=df18['Revenue'], size=df18['Profit'], sizes=(20, 200),
+    color='forestgreen', alpha=0.7, legend=False
+)
+# Adding trendlines
+sns.regplot(x="Budget", y="Revenue", data=df22, scatter=False, color='blue', line_
+sns.regplot(x="Budget", y="Revenue", data=df18, scatter=False, color='green', line
+# Custom legend for the years
+plt.legend(labels=["2022", "2018"], title="Year")
+plt.title('Revenue vs. Budget (2018 vs 2022)', fontsize=16)
+plt.xlabel('Budget (in billions)')
+plt.ylabel('Revenue (in billions)')
+plt.show()
