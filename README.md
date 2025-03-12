@@ -29,3 +29,20 @@ I conducted my research by using boxofficemojo to find the box office reports fo
 # Data Collection
 Box office reports: https://www.boxofficemojo.com/year/world/2018/ (IMDbPro Verified) Production budget reports: https://www.the-numbers.com/movie/budgets (Studios Directly
 Partnered)
+
+# Findings
+μ_1 equals movies from 2018 and μ_2 equals movies from 2022.
+
+H_0: μ_1 = μ_2
+H_1: μ_1 ≠ μ_2 (Claim)
+
+At α = 0.5, can it be concluded that there is a significant statistical difference between the average profits of movies from 2018 and movies from 2022?
+
+Test Value:
+Formula: 2SampTtest: t = ((396408348.28571-242609351.91429)-(0-0))/
+√(〖310361561.08253〗^2/35+〖321126040.39203〗^2/35) = 2.008076
+
+P-Value (Two-Tailed): 0.048610
+P-Value (0.048610) < α (0.05) = We Reject H_0
+
+Conclusion: At the 5% significance level, there is enough evidence to suggest a statistical difference between the average profits of movies before COVID-19 (2018) and after (2022). This supports my claim that there is a significant difference, proving that movie theaters are declining in popularity post-pandemic since the average mean of profit from 2018 movies is significantly higher than that of movies in 2022.
