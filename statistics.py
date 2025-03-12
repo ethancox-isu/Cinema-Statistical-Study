@@ -162,3 +162,24 @@ plt.title('Revenue vs. Budget (2018 vs 2022)', fontsize=16)
 plt.xlabel('Budget (in billions)')
 plt.ylabel('Revenue (in billions)')
 plt.show()
+
+
+
+
+# 3. Tree Map of Profit by Movie
+# Create a treemap for 2022 movies
+fig_2022 = px.treemap(
+    df22, path=['Title'], values='Profit', color='Profit',
+    color_continuous_scale='Viridis', title="Profit Distribution for 2022 Movies",
+    hover_data={'Profit':':$.2f'}
+)
+fig_2022.update_layout(margin=dict(t=50, l=25, r=25, b=25))
+fig_2022.show()
+# Create a treemap for 2018 movies
+fig_2018 = px.treemap(
+    df18, path=['Title'], values='Profit', color='Profit',
+    color_continuous_scale='Plasma', title="Profit Distribution for 2018 Movies",
+    hover_data={'Profit':':$.2f'}
+)
+fig_2018.update_layout(margin=dict(t=50, l=25, r=25, b=25))
+fig_2018.show()
